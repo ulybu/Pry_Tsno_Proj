@@ -1,0 +1,282 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D48D646816A1CA99008D3128 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D48D646716A1CA99008D3128 /* UIKit.framework */; };
+		D48D646A16A1CA99008D3128 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D48D646916A1CA99008D3128 /* Foundation.framework */; };
+		D48D646C16A1CA99008D3128 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D48D646B16A1CA99008D3128 /* CoreGraphics.framework */; };
+		D48D647216A1CA99008D3128 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D48D647016A1CA99008D3128 /* InfoPlist.strings */; };
+		D48D647416A1CA99008D3128 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D48D647316A1CA99008D3128 /* main.m */; };
+		D48D647816A1CA99008D3128 /* PTPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D48D647716A1CA99008D3128 /* PTPAppDelegate.m */; };
+		D48D647A16A1CA99008D3128 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D48D647916A1CA99008D3128 /* Default.png */; };
+		D48D647C16A1CA99008D3128 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D48D647B16A1CA99008D3128 /* Default@2x.png */; };
+		D48D647E16A1CA99008D3128 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D48D647D16A1CA99008D3128 /* Default-568h@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D48D646316A1CA99008D3128 /* Pry_Tsno_Proj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pry_Tsno_Proj.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D48D646716A1CA99008D3128 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D48D646916A1CA99008D3128 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D48D646B16A1CA99008D3128 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D48D646F16A1CA99008D3128 /* Pry_Tsno_Proj-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pry_Tsno_Proj-Info.plist"; sourceTree = "<group>"; };
+		D48D647116A1CA99008D3128 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D48D647316A1CA99008D3128 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D48D647516A1CA99008D3128 /* Pry_Tsno_Proj-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pry_Tsno_Proj-Prefix.pch"; sourceTree = "<group>"; };
+		D48D647616A1CA99008D3128 /* PTPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTPAppDelegate.h; sourceTree = "<group>"; };
+		D48D647716A1CA99008D3128 /* PTPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTPAppDelegate.m; sourceTree = "<group>"; };
+		D48D647916A1CA99008D3128 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		D48D647B16A1CA99008D3128 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		D48D647D16A1CA99008D3128 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D48D646016A1CA99008D3128 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D48D646816A1CA99008D3128 /* UIKit.framework in Frameworks */,
+				D48D646A16A1CA99008D3128 /* Foundation.framework in Frameworks */,
+				D48D646C16A1CA99008D3128 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D48D645816A1CA99008D3128 = {
+			isa = PBXGroup;
+			children = (
+				D48D646D16A1CA99008D3128 /* Pry_Tsno_Proj */,
+				D48D646616A1CA99008D3128 /* Frameworks */,
+				D48D646416A1CA99008D3128 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D48D646416A1CA99008D3128 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D48D646316A1CA99008D3128 /* Pry_Tsno_Proj.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D48D646616A1CA99008D3128 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D48D646716A1CA99008D3128 /* UIKit.framework */,
+				D48D646916A1CA99008D3128 /* Foundation.framework */,
+				D48D646B16A1CA99008D3128 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D48D646D16A1CA99008D3128 /* Pry_Tsno_Proj */ = {
+			isa = PBXGroup;
+			children = (
+				D48D647616A1CA99008D3128 /* PTPAppDelegate.h */,
+				D48D647716A1CA99008D3128 /* PTPAppDelegate.m */,
+				D48D646E16A1CA99008D3128 /* Supporting Files */,
+			);
+			path = Pry_Tsno_Proj;
+			sourceTree = "<group>";
+		};
+		D48D646E16A1CA99008D3128 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D48D646F16A1CA99008D3128 /* Pry_Tsno_Proj-Info.plist */,
+				D48D647016A1CA99008D3128 /* InfoPlist.strings */,
+				D48D647316A1CA99008D3128 /* main.m */,
+				D48D647516A1CA99008D3128 /* Pry_Tsno_Proj-Prefix.pch */,
+				D48D647916A1CA99008D3128 /* Default.png */,
+				D48D647B16A1CA99008D3128 /* Default@2x.png */,
+				D48D647D16A1CA99008D3128 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D48D646216A1CA99008D3128 /* Pry_Tsno_Proj */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D48D648116A1CA99008D3128 /* Build configuration list for PBXNativeTarget "Pry_Tsno_Proj" */;
+			buildPhases = (
+				D48D645F16A1CA99008D3128 /* Sources */,
+				D48D646016A1CA99008D3128 /* Frameworks */,
+				D48D646116A1CA99008D3128 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pry_Tsno_Proj;
+			productName = Pry_Tsno_Proj;
+			productReference = D48D646316A1CA99008D3128 /* Pry_Tsno_Proj.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D48D645A16A1CA99008D3128 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PTP;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = ulybu;
+			};
+			buildConfigurationList = D48D645D16A1CA99008D3128 /* Build configuration list for PBXProject "Pry_Tsno_Proj" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D48D645816A1CA99008D3128;
+			productRefGroup = D48D646416A1CA99008D3128 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D48D646216A1CA99008D3128 /* Pry_Tsno_Proj */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D48D646116A1CA99008D3128 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D48D647216A1CA99008D3128 /* InfoPlist.strings in Resources */,
+				D48D647A16A1CA99008D3128 /* Default.png in Resources */,
+				D48D647C16A1CA99008D3128 /* Default@2x.png in Resources */,
+				D48D647E16A1CA99008D3128 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D48D645F16A1CA99008D3128 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D48D647416A1CA99008D3128 /* main.m in Sources */,
+				D48D647816A1CA99008D3128 /* PTPAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D48D647016A1CA99008D3128 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D48D647116A1CA99008D3128 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D48D647F16A1CA99008D3128 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D48D648016A1CA99008D3128 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D48D648216A1CA99008D3128 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pry_Tsno_Proj/Pry_Tsno_Proj-Prefix.pch";
+				INFOPLIST_FILE = "Pry_Tsno_Proj/Pry_Tsno_Proj-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D48D648316A1CA99008D3128 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pry_Tsno_Proj/Pry_Tsno_Proj-Prefix.pch";
+				INFOPLIST_FILE = "Pry_Tsno_Proj/Pry_Tsno_Proj-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D48D645D16A1CA99008D3128 /* Build configuration list for PBXProject "Pry_Tsno_Proj" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D48D647F16A1CA99008D3128 /* Debug */,
+				D48D648016A1CA99008D3128 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D48D648116A1CA99008D3128 /* Build configuration list for PBXNativeTarget "Pry_Tsno_Proj" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D48D648216A1CA99008D3128 /* Debug */,
+				D48D648316A1CA99008D3128 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D48D645A16A1CA99008D3128 /* Project object */;
+}
