@@ -7,13 +7,82 @@
 //
 
 #import "PTPAppDelegate.h"
+#import "PTPVinsViewController.h"
+#import "PTPCoursViewController.h"
+#import "PTPCommandesViewController.h"
+#import "PTPVideosViewController.h"
+#import "PTPProfilViewController.h"
+#import "PTPAboutViewController.h"
+
+
 
 @implementation PTPAppDelegate
-
+@synthesize tabBarController=_tabBarController;
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 { 
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    UIViewController *vinsController, *coursViewController, *commandesViewController,*videosViewController,*profilViewController,*aboutViewController;
+    
+    //    VINS
+    //    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+    vinsController = [[PTPVinsViewController alloc] initWithNibName:@"PTPVinsViewController" bundle:nil];
+    UITabBarItem *tabBarItemVins= [[UITabBarItem alloc] initWithTitle:@"Vins"
+                                                                image: [UIImage imageNamed:@"wine-glass.png"] tag:1];
+    vinsController.tabBarItem=tabBarItemVins;
+    
+    //        COURS
+    coursViewController = [[PTPCoursViewController alloc] initWithNibName:@"PTPCoursViewController" bundle:nil];
+    UITabBarItem *tabBarItemCours= [[UITabBarItem alloc] initWithTitle:@"Cours"
+                                                                 image: [UIImage imageNamed:@"calendar.png"] tag:1];
+    coursViewController.tabBarItem=tabBarItemCours;
+    
+    //        COMMANDES
+    commandesViewController = [[PTPCommandesViewController alloc] initWithNibName:@"PTPCommandesViewController" bundle:nil];
+    
+    UITabBarItem *tabBarItemCommande= [[UITabBarItem alloc] initWithTitle:@"Commande"
+                                                                    image: [UIImage imageNamed:@"shopping-cart.png"] tag:1];
+    commandesViewController.tabBarItem=tabBarItemCommande;
+    
+    //        VIDEOS
+    //       UINavigationController *navigationController2= [[UINavigationController alloc] initWithNibName:@"VideosViewController" bundle:nil];
+    
+    videosViewController = [[PTPVideosViewController alloc] initWithNibName:@"PTPVideosViewController" bundle:nil];
+    
+    UITabBarItem *tabBarItemTV= [[UITabBarItem alloc] initWithTitle:@"Videos"
+                                                              image: [UIImage imageNamed:@"tv.png"] tag:1];
+    videosViewController.tabBarItem=tabBarItemTV;
+    
+    //        PROFIL
+    profilViewController = [[PTPProfilViewController alloc] initWithNibName:@"PTPProfilViewController" bundle:nil];
+    UITabBarItem *tabBarItemProfil= [[UITabBarItem alloc] initWithTitle:@"Profil"
+                                                                  image: [UIImage imageNamed:@"user.png"] tag:1];
+    profilViewController.tabBarItem=tabBarItemProfil;
+    
+    //        ABOUT
+    aboutViewController = [[PTPAboutViewController alloc] initWithNibName:@"PTPAboutViewController" bundle:nil];
+    UITabBarItem *tabBarItemAbout= [[UITabBarItem alloc] initWithTitle:@"A Propos"
+                                                                 image: [UIImage imageNamed:@"calendar.png"] tag:1];
+    aboutViewController.tabBarItem=tabBarItemAbout;
+    
+    //    } else {
+    //        vinsController = [[VinsViewController alloc] initWithNibName:@"VinViewController_iPad" bundle:nil];
+    //        coursViewController = [[CoursViewController alloc] initWithNibName:@"CoursViewController_iPad" bundle:nil];
+    //    }
+    
+    
+    //    CoursViewController *secondViewController = [[CoursViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:coursViewController];
+    navigationController.title = @"Cours";
+    [navigationController setNavigationBarHidden:NO];
+    
+    
+    self.tabBarController = [[UITabBarController alloc] init];
+    self.tabBarController.viewControllers = @[vinsController, navigationController,commandesViewController,videosViewController,profilViewController,aboutViewController];
+    self.window.rootViewController = self.tabBarController;
+
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
