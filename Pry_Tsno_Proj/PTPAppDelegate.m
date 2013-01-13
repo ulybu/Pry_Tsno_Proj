@@ -67,13 +67,10 @@
                                                                  image: [UIImage imageNamed:@"calendar.png"] tag:1];
     aboutViewController.tabBarItem=tabBarItemAbout;
     
-    //    } else {
-    //        vinsController = [[VinsViewController alloc] initWithNibName:@"VinViewController_iPad" bundle:nil];
-    //        coursViewController = [[CoursViewController alloc] initWithNibName:@"CoursViewController_iPad" bundle:nil];
-    //    }
-    
+ 
     
     //    CoursViewController *secondViewController = [[CoursViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
+    
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:coursViewController];
     navigationController.title = @"Cours";
     [navigationController setNavigationBarHidden:NO];
