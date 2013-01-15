@@ -15,6 +15,7 @@
 #import "PTPAboutViewController.h"
 #import "WineViewController.h"
 #import "CourseListViewController.h"
+#import "ShoppingListViewController.h"
 
 
 
@@ -40,7 +41,7 @@
     coursViewController.tabBarItem=tabBarItemCours;
     
     //        COMMANDES
-    commandesViewController = [[PTPCommandesViewController alloc] initWithNibName:@"PTPCommandesViewController" bundle:nil];
+    commandesViewController = [[ShoppingListViewController alloc] initWithNibName:@"ShoppingListViewController" bundle:nil];
     
     UITabBarItem *tabBarItemCommande= [[UITabBarItem alloc] initWithTitle:@"Commande"
                                                                     image: [UIImage imageNamed:@"shopping-cart.png"] tag:3];
@@ -70,7 +71,7 @@
 //    ********
 //    NAVIGATION
     
-    UINavigationController *vinsNavigationController, *coursNavigationController, *profilNavigationController;
+    UINavigationController *vinsNavigationController, *coursNavigationController,*shoppingNavigationController, *profilNavigationController;
     
 //    VINS
     vinsNavigationController = [[UINavigationController alloc] initWithRootViewController:vinsViewController];
@@ -82,6 +83,12 @@
     coursNavigationController.title = @"Cours";
     [coursNavigationController setNavigationBarHidden:NO];
     
+//    SHOPPING
+    shoppingNavigationController = [[UINavigationController alloc] initWithRootViewController:commandesViewController];
+    coursNavigationController.title = @"Cours";
+    [coursNavigationController setNavigationBarHidden:NO];
+    
+    
 //    PROFIL
     profilNavigationController = [[UINavigationController alloc] initWithRootViewController:profilViewController];
 //    profilNavigationController.title = @";
@@ -89,7 +96,7 @@
     
     
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = @[vinsNavigationController, coursNavigationController,commandesViewController,videosViewController,profilNavigationController,aboutViewController];
+    self.tabBarController.viewControllers = @[vinsNavigationController, coursNavigationController,shoppingNavigationController,videosViewController,profilNavigationController,aboutViewController];
     self.window.rootViewController = self.tabBarController;
 
     self.window.backgroundColor = [UIColor whiteColor];

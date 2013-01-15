@@ -15,7 +15,7 @@
 @synthesize price;
 @synthesize year;
 @synthesize image;
-
+@synthesize ID;
 
 
 

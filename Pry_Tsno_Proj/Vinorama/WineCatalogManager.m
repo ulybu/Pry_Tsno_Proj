@@ -19,6 +19,7 @@
 - (id) init{
     self = [super init];
     if (self){
+        
         [self parseWineCatalog];
     }
     return self;
@@ -47,7 +48,7 @@
                 wine.image = [UIImage imageWithData: data];
             });
         });
-        
+        wine.ID = [[wineJSON valueForKey:@"id"] integerValue];
         [tempWineCatalog addObject: wine];
     }
     wineCatalog = [[NSArray alloc] initWithArray:tempWineCatalog];

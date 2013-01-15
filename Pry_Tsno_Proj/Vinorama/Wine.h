@@ -15,6 +15,7 @@
     float price;
     NSString *description;
     UIImage *image;
+    NSInteger ID;
 }
 
 
@@ -23,6 +24,7 @@
 @property (nonatomic,assign) float price;
 @property (nonatomic,assign) NSInteger year;
 @property (nonatomic,copy) UIImage *image;
+@property (nonatomic,assign) NSInteger ID;
 
 @end
 

@@ -3,23 +3,26 @@
               {
               "name": "Côtes Du Rhône GUIGAL Rouge AOC",
               "year": "2007",
-              "price": "7,90",
+              "price": "7.90",
               "description": "Le côtes du Rhône Guigal a une robe rouge sombre et brillante. Au nez, des arômes de fruits noirs et des notes d’épices. En bouche ce vin a des tanins arrondis, très enrobés et bien présents. Ce vin est élégant et fin grâce à un bel équilibre entre tanins et fruits.",
-              "imageUrl": "http://www.bar-shop.com/media/catalog/product/cache/20/image/350x/9df78eab33525d08d6e5fb8d27136e95/c/o/cote-du-rhone-guigal-2007.jpg"
+              "imageUrl": "http://www.bar-shop.com/media/catalog/product/cache/20/image/350x/9df78eab33525d08d6e5fb8d27136e95/c/o/cote-du-rhone-guigal-2007.jpg",
+              "id": "0"
               },
               {
               "name": "Arrogant Frog",
               "year": "2009",
-              "price": "4,70",
+              "price": "4.70",
               "description": "C'est un vin arborant une couleur rouge violacée opaque. Un nez assez puissant qui souvre sur des notes de cassis, de poivron vert et de vanille puis des effluves de cacao et de garrigue. Il possède une agréable fraîcheur ainsi que de tanins souples. Tout comme à l'olfaction, il s'affirme par des saveurs d'épices et de fruits noirs, une bouche ample qui se termine dans une finale assez persistante.",
-              "imageUrl": "http://www.bar-shop.com/media/catalog/product/cache/20/image/350x/9df78eab33525d08d6e5fb8d27136e95/2/1/21514-vin-arrogant-frog-cabernet-merlot.jpg"
+              "imageUrl": "http://www.bar-shop.com/media/catalog/product/cache/20/image/350x/9df78eab33525d08d6e5fb8d27136e95/2/1/21514-vin-arrogant-frog-cabernet-merlot.jpg",
+              "id": "1"
               },
               {
               "name": "Croze Hermitage GUIGAL",
               "year": "2007",
-              "price": "12,50",
+              "price": "12.50",
               "description": "Beau vin rouge sombre aux arômes délicats de boisé, petits fruits rouges de cerise et de fraise. Vin tannique et massif, remarquable de fraîcheur.",
-              "imageUrl": "http://www.bar-shop.com/media/catalog/product/cache/20/image/350x/9df78eab33525d08d6e5fb8d27136e95/2/2/2253-vin-guigal-crozes-hermitage-rouge-75cl_1.jpg"
+              "imageUrl": "http://www.bar-shop.com/media/catalog/product/cache/20/image/350x/9df78eab33525d08d6e5fb8d27136e95/2/2/2253-vin-guigal-crozes-hermitage-rouge-75cl_1.jpg",
+              "id": "2"
               }
               ]
 }

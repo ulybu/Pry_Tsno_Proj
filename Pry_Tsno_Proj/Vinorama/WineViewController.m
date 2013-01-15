@@ -27,15 +27,27 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.title=@"Vins Disponibles";
-        UIBarButtonItem *shopItem = [[UIBarButtonItem alloc]  target:<#(id)#> action:<#(SEL)#>
-                                  
+        UIBarButtonItem *shopItem = [[UIBarButtonItem alloc]  initWithImage:[UIImage imageNamed:@"shopping-cart"] style:UIBarButtonItemStylePlain target:self action:@selector(addToShopCart:)];
+        self.navigationItem.rightBarButtonItem=shopItem;
     }
     return self;
 }
-
+- (void) addToShopCart : (id)sender {
+//    if(_delegate==nil){
+//        NSLog(@"aaaaa");
+//        _delegate=_gestionnaire.commandesController;
+//    }
+//    [self.tabBarItem setBadgeValue:@"3"];
+//    [_delegate nouvelleCommande:12];
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    //    Gestionnaire de Commandes
+//    _gestionnaire = [PTPGestionCommandes sharedGestionCommandes];
+    
+    // LE RESTE
     self.view.backgroundColor = [UIColor scrollViewTexturedBackgroundColor];
     wineCatalogManager = [[WineCatalogManager alloc] init];
     
