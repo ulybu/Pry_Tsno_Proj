@@ -18,7 +18,8 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+//        self.navigationController.title=@"manger";
+         self.title =@"A Propos";
     }
     return self;
 }

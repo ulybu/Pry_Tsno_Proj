@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D45F1DF516A60F78000148D0 /* wine1.png in Resources */ = {isa = PBXBuildFile; fileRef = D45F1DF416A60F78000148D0 /* wine1.png */; };
+		D48A9EA516A5C3A300F920F9 /* vigne.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D48A9EA416A5C3A300F920F9 /* vigne.jpg */; };
 		D48CD67316A1CD400094AC58 /* PTPVideosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D48CD67116A1CD400094AC58 /* PTPVideosViewController.m */; };
 		D48CD67416A1CD400094AC58 /* PTPVideosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D48CD67216A1CD400094AC58 /* PTPVideosViewController.xib */; };
 		D48CD67816A1CDA10094AC58 /* PTPProfilViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D48CD67616A1CDA10094AC58 /* PTPProfilViewController.m */; };
@@ -25,6 +27,11 @@
 		D48CE34716A5A9AC0021FB10 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = D48CE34316A5A9AC0021FB10 /* CHANGELOG.md */; };
 		D48CE34816A5A9AC0021FB10 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D48CE34516A5A9AC0021FB10 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D48CE34916A5A9AC0021FB10 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D48CE34616A5A9AC0021FB10 /* README.md */; };
+		D48CE35316A5AE130021FB10 /* PTPCourse.m in Sources */ = {isa = PBXBuildFile; fileRef = D48CE34B16A5AE130021FB10 /* PTPCourse.m */; };
+		D48CE35516A5AE130021FB10 /* PTPCourseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D48CE34E16A5AE130021FB10 /* PTPCourseCell.xib */; };
+		D48CE35616A5AE130021FB10 /* PTPCourseDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D48CE35016A5AE130021FB10 /* PTPCourseDetailViewController.m */; };
+		D48CE35716A5AE130021FB10 /* PTPCourseDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D48CE35116A5AE130021FB10 /* PTPCourseDetailViewController.xib */; };
+		D48CE35816A5AE130021FB10 /* courses.json in Resources */ = {isa = PBXBuildFile; fileRef = D48CE35216A5AE130021FB10 /* courses.json */; };
 		D48D646816A1CA99008D3128 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D48D646716A1CA99008D3128 /* UIKit.framework */; };
 		D48D646A16A1CA99008D3128 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D48D646916A1CA99008D3128 /* Foundation.framework */; };
 		D48D646C16A1CA99008D3128 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D48D646B16A1CA99008D3128 /* CoreGraphics.framework */; };
@@ -39,35 +46,32 @@
 		D48DBB1216A224BC00B3F5FD /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = D48DBAF616A224BB00B3F5FD /* Contact.m */; };
 		D48DBB1616A224BC00B3F5FD /* DownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D48DBAFE16A224BC00B3F5FD /* DownloadManager.m */; };
 		D48DBB1716A224BC00B3F5FD /* DownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D48DBB0016A224BC00B3F5FD /* DownloadOperation.m */; };
-		D48DBB1816A224BC00B3F5FD /* File.json in Resources */ = {isa = PBXBuildFile; fileRef = D48DBB0116A224BC00B3F5FD /* File.json */; };
-		D48DBB1916A224BC00B3F5FD /* LocalFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D48DBB0316A224BC00B3F5FD /* LocalFileViewController.m */; };
-		D48DBB1A16A224BC00B3F5FD /* LocalFileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D48DBB0416A224BC00B3F5FD /* LocalFileViewController.xib */; };
 		D48DBB1B16A224BC00B3F5FD /* MSToolTips-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D48DBB0516A224BC00B3F5FD /* MSToolTips-Info.plist */; };
 		D48DBB1E16A224BC00B3F5FD /* SampleLoad.json in Resources */ = {isa = PBXBuildFile; fileRef = D48DBB0B16A224BC00B3F5FD /* SampleLoad.json */; };
 		D48DBB1F16A224BC00B3F5FD /* SampleLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D48DBB0D16A224BC00B3F5FD /* SampleLoadViewController.m */; };
-		D48DD05116A44FD60047CC10 /* WineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D48DD05016A44FD60047CC10 /* WineViewController.xib */; };
+		D48DD05116A44FD60047CC10 /* PTPWineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D48DD05016A44FD60047CC10 /* PTPWineViewController.xib */; };
 		D48DD05316A44FD60047CC10 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D48DD05216A44FD60047CC10 /* QuartzCore.framework */; };
 		D48DD05516A44FD60047CC10 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D48DD05416A44FD60047CC10 /* MediaPlayer.framework */; };
-		D491BB7F16A4F11100CD4C4D /* Wine.m in Sources */ = {isa = PBXBuildFile; fileRef = D491BB7B16A4F11100CD4C4D /* Wine.m */; };
-		D491BB8016A4F11100CD4C4D /* WineCatalogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D491BB7D16A4F11100CD4C4D /* WineCatalogManager.m */; };
+		D48F6E2016A5D04400297BCA /* obama.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D48F6E1F16A5D04400297BCA /* obama.jpg */; };
+		D491BB7F16A4F11100CD4C4D /* PTPWine.m in Sources */ = {isa = PBXBuildFile; fileRef = D491BB7B16A4F11100CD4C4D /* PTPWine.m */; };
+		D491BB8016A4F11100CD4C4D /* PTPWineCatalogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D491BB7D16A4F11100CD4C4D /* PTPWineCatalogManager.m */; };
 		D491BB8116A4F11100CD4C4D /* wines.json in Resources */ = {isa = PBXBuildFile; fileRef = D491BB7E16A4F11100CD4C4D /* wines.json */; };
 		D491D00116A395FC004E9EDB /* info1.png in Resources */ = {isa = PBXBuildFile; fileRef = D491CFFF16A395FC004E9EDB /* info1.png */; };
-		D495384216A4F384004C8972 /* WineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D495384116A4F384004C8972 /* WineViewController.m */; };
-		D4A0C3BE16A4DB2A007A10D6 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A0C3B616A4DB2A007A10D6 /* Course.m */; };
-		D4A0C3BF16A4DB2A007A10D6 /* CourseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A0C3B816A4DB2A007A10D6 /* CourseCell.m */; };
-		D4A0C3C016A4DB2A007A10D6 /* CourseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4A0C3B916A4DB2A007A10D6 /* CourseCell.xib */; };
-		D4A0C3C116A4DB2A007A10D6 /* CourseListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A0C3BB16A4DB2A007A10D6 /* CourseListViewController.m */; };
-		D4A0C3C216A4DB2A007A10D6 /* CourseListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4A0C3BC16A4DB2A007A10D6 /* CourseListViewController.xib */; };
-		D4A0C3C316A4DB2A007A10D6 /* courses.json in Resources */ = {isa = PBXBuildFile; fileRef = D4A0C3BD16A4DB2A007A10D6 /* courses.json */; };
-		D4A0C3CC16A4E822007A10D6 /* OrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A0C3C616A4E822007A10D6 /* OrderCell.m */; };
-		D4A0C3CD16A4E822007A10D6 /* OrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4A0C3C716A4E822007A10D6 /* OrderCell.xib */; };
+		D493F9A416A5F2AC00DE5BA1 /* PTPCourseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D48CE34D16A5AE130021FB10 /* PTPCourseCell.m */; };
+		D495384216A4F384004C8972 /* PTPWineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D495384116A4F384004C8972 /* PTPWineViewController.m */; };
+		D4A0C3C116A4DB2A007A10D6 /* PTPCourseListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A0C3BB16A4DB2A007A10D6 /* PTPCourseListViewController.m */; };
+		D4A0C3C216A4DB2A007A10D6 /* PTPCourseListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4A0C3BC16A4DB2A007A10D6 /* PTPCourseListViewController.xib */; };
+		D4A0C3CC16A4E822007A10D6 /* PTPOrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A0C3C616A4E822007A10D6 /* PTPOrderCell.m */; };
+		D4A0C3CD16A4E822007A10D6 /* PTPOrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4A0C3C716A4E822007A10D6 /* PTPOrderCell.xib */; };
 		D4A0C3CE16A4E822007A10D6 /* shoppingCart.json in Resources */ = {isa = PBXBuildFile; fileRef = D4A0C3C816A4E822007A10D6 /* shoppingCart.json */; };
-		D4A0C3CF16A4E822007A10D6 /* ShoppingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A0C3CA16A4E822007A10D6 /* ShoppingListViewController.m */; };
-		D4A0C3D016A4E822007A10D6 /* ShoppingListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4A0C3CB16A4E822007A10D6 /* ShoppingListViewController.xib */; };
-		D4A49E9016A48149008506A5 /* PTPGestionCommandes.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A49E8F16A48148008506A5 /* PTPGestionCommandes.m */; };
+		D4A0C3CF16A4E822007A10D6 /* PTPShoppingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A0C3CA16A4E822007A10D6 /* PTPShoppingListViewController.m */; };
+		D4A0C3D016A4E822007A10D6 /* PTPShoppingListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4A0C3CB16A4E822007A10D6 /* PTPShoppingListViewController.xib */; };
+		D4A49E9016A48149008506A5 /* PTPGestionCommandesDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A49E8F16A48148008506A5 /* PTPGestionCommandesDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D45F1DF416A60F78000148D0 /* wine1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wine1.png; path = ../../wine1.png; sourceTree = "<group>"; };
+		D48A9EA416A5C3A300F920F9 /* vigne.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = vigne.jpg; path = icons/vigne.jpg; sourceTree = "<group>"; };
 		D48CD67016A1CD400094AC58 /* PTPVideosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPVideosViewController.h; sourceTree = "<group>"; };
 		D48CD67116A1CD400094AC58 /* PTPVideosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTPVideosViewController.m; sourceTree = "<group>"; };
 		D48CD67216A1CD400094AC58 /* PTPVideosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PTPVideosViewController.xib; sourceTree = "<group>"; };
@@ -91,6 +95,15 @@
 		D48CE34416A5A9AC0021FB10 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		D48CE34516A5A9AC0021FB10 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		D48CE34616A5A9AC0021FB10 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		D48CE34A16A5AE130021FB10 /* PTPCourse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPCourse.h; sourceTree = "<group>"; };
+		D48CE34B16A5AE130021FB10 /* PTPCourse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTPCourse.m; sourceTree = "<group>"; };
+		D48CE34C16A5AE130021FB10 /* PTPCourseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPCourseCell.h; sourceTree = "<group>"; };
+		D48CE34D16A5AE130021FB10 /* PTPCourseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTPCourseCell.m; sourceTree = "<group>"; };
+		D48CE34E16A5AE130021FB10 /* PTPCourseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PTPCourseCell.xib; sourceTree = "<group>"; };
+		D48CE34F16A5AE130021FB10 /* PTPCourseDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPCourseDetailViewController.h; sourceTree = "<group>"; };
+		D48CE35016A5AE130021FB10 /* PTPCourseDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTPCourseDetailViewController.m; sourceTree = "<group>"; };
+		D48CE35116A5AE130021FB10 /* PTPCourseDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PTPCourseDetailViewController.xib; sourceTree = "<group>"; };
+		D48CE35216A5AE130021FB10 /* courses.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = courses.json; path = Courses/courses.json; sourceTree = "<group>"; };
 		D48D646316A1CA99008D3128 /* Pry_Tsno_Proj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pry_Tsno_Proj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D48D646716A1CA99008D3128 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D48D646916A1CA99008D3128 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -113,44 +126,35 @@
 		D48DBAFE16A224BC00B3F5FD /* DownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadManager.m; sourceTree = "<group>"; };
 		D48DBAFF16A224BC00B3F5FD /* DownloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadOperation.h; sourceTree = "<group>"; };
 		D48DBB0016A224BC00B3F5FD /* DownloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadOperation.m; sourceTree = "<group>"; };
-		D48DBB0116A224BC00B3F5FD /* File.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = File.json; sourceTree = "<group>"; };
-		D48DBB0216A224BC00B3F5FD /* LocalFileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalFileViewController.h; sourceTree = "<group>"; };
-		D48DBB0316A224BC00B3F5FD /* LocalFileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalFileViewController.m; sourceTree = "<group>"; };
-		D48DBB0416A224BC00B3F5FD /* LocalFileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocalFileViewController.xib; sourceTree = "<group>"; };
 		D48DBB0516A224BC00B3F5FD /* MSToolTips-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MSToolTips-Info.plist"; sourceTree = "<group>"; };
 		D48DBB0616A224BC00B3F5FD /* MSToolTips-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MSToolTips-Prefix.pch"; sourceTree = "<group>"; };
 		D48DBB0B16A224BC00B3F5FD /* SampleLoad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SampleLoad.json; sourceTree = "<group>"; };
 		D48DBB0C16A224BC00B3F5FD /* SampleLoadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleLoadViewController.h; sourceTree = "<group>"; };
 		D48DBB0D16A224BC00B3F5FD /* SampleLoadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleLoadViewController.m; sourceTree = "<group>"; };
-		D48DD05016A44FD60047CC10 /* WineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WineViewController.xib; sourceTree = "<group>"; };
+		D48DD05016A44FD60047CC10 /* PTPWineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PTPWineViewController.xib; sourceTree = "<group>"; };
 		D48DD05216A44FD60047CC10 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D48DD05416A44FD60047CC10 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		D491BB7A16A4F11100CD4C4D /* Wine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wine.h; sourceTree = "<group>"; };
-		D491BB7B16A4F11100CD4C4D /* Wine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wine.m; sourceTree = "<group>"; };
-		D491BB7C16A4F11100CD4C4D /* WineCatalogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WineCatalogManager.h; sourceTree = "<group>"; };
-		D491BB7D16A4F11100CD4C4D /* WineCatalogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WineCatalogManager.m; sourceTree = "<group>"; };
-		D491BB7E16A4F11100CD4C4D /* wines.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wines.json; sourceTree = "<group>"; };
+		D48F6E1F16A5D04400297BCA /* obama.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = obama.jpg; path = icons/obama.jpg; sourceTree = "<group>"; };
+		D491BB7A16A4F11100CD4C4D /* PTPWine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPWine.h; sourceTree = "<group>"; };
+		D491BB7B16A4F11100CD4C4D /* PTPWine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTPWine.m; sourceTree = "<group>"; };
+		D491BB7C16A4F11100CD4C4D /* PTPWineCatalogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPWineCatalogManager.h; sourceTree = "<group>"; };
+		D491BB7D16A4F11100CD4C4D /* PTPWineCatalogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTPWineCatalogManager.m; sourceTree = "<group>"; };
+		D491BB7E16A4F11100CD4C4D /* wines.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = wines.json; path = Vinorama/wines.json; sourceTree = "<group>"; };
 		D491CFFF16A395FC004E9EDB /* info1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info1.png; sourceTree = "<group>"; };
-		D495384016A4F384004C8972 /* WineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WineViewController.h; sourceTree = "<group>"; };
-		D495384116A4F384004C8972 /* WineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WineViewController.m; sourceTree = "<group>"; };
-		D4A0C3B516A4DB2A007A10D6 /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
-		D4A0C3B616A4DB2A007A10D6 /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
-		D4A0C3B716A4DB2A007A10D6 /* CourseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseCell.h; sourceTree = "<group>"; };
-		D4A0C3B816A4DB2A007A10D6 /* CourseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseCell.m; sourceTree = "<group>"; };
-		D4A0C3B916A4DB2A007A10D6 /* CourseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CourseCell.xib; sourceTree = "<group>"; };
-		D4A0C3BA16A4DB2A007A10D6 /* CourseListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseListViewController.h; sourceTree = "<group>"; };
-		D4A0C3BB16A4DB2A007A10D6 /* CourseListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseListViewController.m; sourceTree = "<group>"; };
-		D4A0C3BC16A4DB2A007A10D6 /* CourseListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CourseListViewController.xib; sourceTree = "<group>"; };
-		D4A0C3BD16A4DB2A007A10D6 /* courses.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = courses.json; sourceTree = "<group>"; };
-		D4A0C3C516A4E822007A10D6 /* OrderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderCell.h; sourceTree = "<group>"; };
-		D4A0C3C616A4E822007A10D6 /* OrderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderCell.m; sourceTree = "<group>"; };
-		D4A0C3C716A4E822007A10D6 /* OrderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderCell.xib; sourceTree = "<group>"; };
-		D4A0C3C816A4E822007A10D6 /* shoppingCart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = shoppingCart.json; sourceTree = "<group>"; };
-		D4A0C3C916A4E822007A10D6 /* ShoppingListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingListViewController.h; sourceTree = "<group>"; };
-		D4A0C3CA16A4E822007A10D6 /* ShoppingListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingListViewController.m; sourceTree = "<group>"; };
-		D4A0C3CB16A4E822007A10D6 /* ShoppingListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShoppingListViewController.xib; sourceTree = "<group>"; };
-		D4A49E8E16A48148008506A5 /* PTPGestionCommandes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPGestionCommandes.h; sourceTree = "<group>"; };
-		D4A49E8F16A48148008506A5 /* PTPGestionCommandes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTPGestionCommandes.m; sourceTree = "<group>"; };
+		D495384016A4F384004C8972 /* PTPWineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPWineViewController.h; sourceTree = "<group>"; };
+		D495384116A4F384004C8972 /* PTPWineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTPWineViewController.m; sourceTree = "<group>"; };
+		D4A0C3BA16A4DB2A007A10D6 /* PTPCourseListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPCourseListViewController.h; sourceTree = "<group>"; };
+		D4A0C3BB16A4DB2A007A10D6 /* PTPCourseListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTPCourseListViewController.m; sourceTree = "<group>"; };
+		D4A0C3BC16A4DB2A007A10D6 /* PTPCourseListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PTPCourseListViewController.xib; sourceTree = "<group>"; };
+		D4A0C3C516A4E822007A10D6 /* PTPOrderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPOrderCell.h; sourceTree = "<group>"; };
+		D4A0C3C616A4E822007A10D6 /* PTPOrderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTPOrderCell.m; sourceTree = "<group>"; };
+		D4A0C3C716A4E822007A10D6 /* PTPOrderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PTPOrderCell.xib; sourceTree = "<group>"; };
+		D4A0C3C816A4E822007A10D6 /* shoppingCart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = shoppingCart.json; path = Shopping/shoppingCart.json; sourceTree = "<group>"; };
+		D4A0C3C916A4E822007A10D6 /* PTPShoppingListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPShoppingListViewController.h; sourceTree = "<group>"; };
+		D4A0C3CA16A4E822007A10D6 /* PTPShoppingListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTPShoppingListViewController.m; sourceTree = "<group>"; };
+		D4A0C3CB16A4E822007A10D6 /* PTPShoppingListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PTPShoppingListViewController.xib; sourceTree = "<group>"; };
+		D4A49E8E16A48148008506A5 /* PTPGestionCommandesDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPGestionCommandesDelegate.h; sourceTree = "<group>"; };
+		D4A49E8F16A48148008506A5 /* PTPGestionCommandesDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTPGestionCommandesDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,9 +173,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D48BE29716A5DCEA00D29BAD /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				D48DBB2316A227C900B3F5FD /* Sample Load */,
+				D48DBB2116A2261800B3F5FD /* download */,
+				D48CE34216A5A9AC0021FB10 /* JSONKit */,
+				D48CE33D16A5A9960021FB10 /* iCarousel */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		D48BE29916A5DD3A00D29BAD /* About */ = {
+			isa = PBXGroup;
+			children = (
+				D48CD67A16A1CDB80094AC58 /* PTPAboutViewController.h */,
+				D48CD67B16A1CDB80094AC58 /* PTPAboutViewController.m */,
+				D48CD67C16A1CDB80094AC58 /* PTPAboutViewController.xib */,
+			);
+			name = About;
+			sourceTree = "<group>";
+		};
+		D48BE29A16A5DD4400D29BAD /* Profil */ = {
+			isa = PBXGroup;
+			children = (
+				D48CD67516A1CDA10094AC58 /* PTPProfilViewController.h */,
+				D48CD67616A1CDA10094AC58 /* PTPProfilViewController.m */,
+				D48CD67716A1CDA10094AC58 /* PTPProfilViewController.xib */,
+			);
+			name = Profil;
+			sourceTree = "<group>";
+		};
 		D48CD67F16A1D0120094AC58 /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				D45F1DF416A60F78000148D0 /* wine1.png */,
 				D491CFFF16A395FC004E9EDB /* info1.png */,
 				D48DBAF316A224BB00B3F5FD /* bouteille.png */,
 				D48DBAF416A224BB00B3F5FD /* bouteille@2x.png */,
@@ -194,7 +230,7 @@
 				D48CE33F16A5A9960021FB10 /* iCarousel.m */,
 			);
 			name = iCarousel;
-			path = ../../MSToolTips/vendor/iCarousel/iCarousel;
+			path = ../MSToolTips/vendor/iCarousel/iCarousel;
 			sourceTree = "<group>";
 		};
 		D48CE34216A5A9AC0021FB10 /* JSONKit */ = {
@@ -206,12 +242,13 @@
 				D48CE34616A5A9AC0021FB10 /* README.md */,
 			);
 			name = JSONKit;
-			path = ../../MSToolTips/vendor/LBYoutubeView/Submodules/JSONKit;
+			path = ../MSToolTips/vendor/LBYoutubeView/Submodules/JSONKit;
 			sourceTree = "<group>";
 		};
 		D48D645816A1CA99008D3128 = {
 			isa = PBXGroup;
 			children = (
+				D48BE29716A5DCEA00D29BAD /* Others */,
 				D48D646D16A1CA99008D3128 /* Pry_Tsno_Proj */,
 				D48D646616A1CA99008D3128 /* Frameworks */,
 				D48D646416A1CA99008D3128 /* Products */,
@@ -241,31 +278,20 @@
 		D48D646D16A1CA99008D3128 /* Pry_Tsno_Proj */ = {
 			isa = PBXGroup;
 			children = (
-				D48CE34216A5A9AC0021FB10 /* JSONKit */,
-				D48CE33D16A5A9960021FB10 /* iCarousel */,
+				D4901C1116A603BE000BEB00 /* Local Data */,
 				D4A0C3C416A4E822007A10D6 /* Shopping */,
 				D4A0C3B416A4DB2A007A10D6 /* Courses */,
-				D48DD02C16A44FD60047CC10 /* Vinorama */,
-				D48DBB2116A2261800B3F5FD /* download */,
-				D48DBB2316A227C900B3F5FD /* Sample Load */,
-				D48DBB2716A228BF00B3F5FD /* Local data */,
+				D48DD02C16A44FD60047CC10 /* Wine */,
 				D48DBB0616A224BC00B3F5FD /* MSToolTips-Prefix.pch */,
 				D48DBB0516A224BC00B3F5FD /* MSToolTips-Info.plist */,
-				D48CD67F16A1D0120094AC58 /* icons */,
 				D48D647616A1CA99008D3128 /* PTPAppDelegate.h */,
 				D48D647716A1CA99008D3128 /* PTPAppDelegate.m */,
-				D4A49E8E16A48148008506A5 /* PTPGestionCommandes.h */,
-				D4A49E8F16A48148008506A5 /* PTPGestionCommandes.m */,
+				D4A49E8E16A48148008506A5 /* PTPGestionCommandesDelegate.h */,
+				D4A49E8F16A48148008506A5 /* PTPGestionCommandesDelegate.m */,
 				D48D646E16A1CA99008D3128 /* Supporting Files */,
-				D48CD67016A1CD400094AC58 /* PTPVideosViewController.h */,
-				D48CD67116A1CD400094AC58 /* PTPVideosViewController.m */,
-				D48CD67216A1CD400094AC58 /* PTPVideosViewController.xib */,
-				D48CD67516A1CDA10094AC58 /* PTPProfilViewController.h */,
-				D48CD67616A1CDA10094AC58 /* PTPProfilViewController.m */,
-				D48CD67716A1CDA10094AC58 /* PTPProfilViewController.xib */,
-				D48CD67A16A1CDB80094AC58 /* PTPAboutViewController.h */,
-				D48CD67B16A1CDB80094AC58 /* PTPAboutViewController.m */,
-				D48CD67C16A1CDB80094AC58 /* PTPAboutViewController.xib */,
+				D4901C1016A60196000BEB00 /* Video */,
+				D48BE29A16A5DD4400D29BAD /* Profil */,
+				D48BE29916A5DD3A00D29BAD /* About */,
 			);
 			path = Pry_Tsno_Proj;
 			sourceTree = "<group>";
@@ -294,6 +320,7 @@
 				D48DBB0016A224BC00B3F5FD /* DownloadOperation.m */,
 			);
 			name = download;
+			path = Pry_Tsno_Proj;
 			sourceTree = "<group>";
 		};
 		D48DBB2316A227C900B3F5FD /* Sample Load */ = {
@@ -306,46 +333,61 @@
 				D48DBB0D16A224BC00B3F5FD /* SampleLoadViewController.m */,
 			);
 			name = "Sample Load";
+			path = Pry_Tsno_Proj;
 			sourceTree = "<group>";
 		};
-		D48DBB2716A228BF00B3F5FD /* Local data */ = {
+		D48DD02C16A44FD60047CC10 /* Wine */ = {
 			isa = PBXGroup;
 			children = (
-				D48DBB0116A224BC00B3F5FD /* File.json */,
-				D48DBB0216A224BC00B3F5FD /* LocalFileViewController.h */,
-				D48DBB0316A224BC00B3F5FD /* LocalFileViewController.m */,
-				D48DBB0416A224BC00B3F5FD /* LocalFileViewController.xib */,
+				D495384016A4F384004C8972 /* PTPWineViewController.h */,
+				D495384116A4F384004C8972 /* PTPWineViewController.m */,
+				D491BB7A16A4F11100CD4C4D /* PTPWine.h */,
+				D491BB7B16A4F11100CD4C4D /* PTPWine.m */,
+				D491BB7C16A4F11100CD4C4D /* PTPWineCatalogManager.h */,
+				D491BB7D16A4F11100CD4C4D /* PTPWineCatalogManager.m */,
+				D48DD05016A44FD60047CC10 /* PTPWineViewController.xib */,
 			);
-			name = "Local data";
-			sourceTree = "<group>";
-		};
-		D48DD02C16A44FD60047CC10 /* Vinorama */ = {
-			isa = PBXGroup;
-			children = (
-				D495384016A4F384004C8972 /* WineViewController.h */,
-				D495384116A4F384004C8972 /* WineViewController.m */,
-				D491BB7A16A4F11100CD4C4D /* Wine.h */,
-				D491BB7B16A4F11100CD4C4D /* Wine.m */,
-				D491BB7C16A4F11100CD4C4D /* WineCatalogManager.h */,
-				D491BB7D16A4F11100CD4C4D /* WineCatalogManager.m */,
-				D491BB7E16A4F11100CD4C4D /* wines.json */,
-				D48DD05016A44FD60047CC10 /* WineViewController.xib */,
-			);
+			name = Wine;
 			path = Vinorama;
+			sourceTree = "<group>";
+		};
+		D4901C1016A60196000BEB00 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				D48CD67016A1CD400094AC58 /* PTPVideosViewController.h */,
+				D48CD67116A1CD400094AC58 /* PTPVideosViewController.m */,
+				D48CD67216A1CD400094AC58 /* PTPVideosViewController.xib */,
+			);
+			name = Video;
+			sourceTree = "<group>";
+		};
+		D4901C1116A603BE000BEB00 /* Local Data */ = {
+			isa = PBXGroup;
+			children = (
+				D48CD67F16A1D0120094AC58 /* icons */,
+				D48A9EA416A5C3A300F920F9 /* vigne.jpg */,
+				D48F6E1F16A5D04400297BCA /* obama.jpg */,
+				D491BB7E16A4F11100CD4C4D /* wines.json */,
+				D48CE35216A5AE130021FB10 /* courses.json */,
+				D4A0C3C816A4E822007A10D6 /* shoppingCart.json */,
+			);
+			name = "Local Data";
 			sourceTree = "<group>";
 		};
 		D4A0C3B416A4DB2A007A10D6 /* Courses */ = {
 			isa = PBXGroup;
 			children = (
-				D4A0C3B516A4DB2A007A10D6 /* Course.h */,
-				D4A0C3B616A4DB2A007A10D6 /* Course.m */,
-				D4A0C3B716A4DB2A007A10D6 /* CourseCell.h */,
-				D4A0C3B816A4DB2A007A10D6 /* CourseCell.m */,
-				D4A0C3B916A4DB2A007A10D6 /* CourseCell.xib */,
-				D4A0C3BA16A4DB2A007A10D6 /* CourseListViewController.h */,
-				D4A0C3BB16A4DB2A007A10D6 /* CourseListViewController.m */,
-				D4A0C3BC16A4DB2A007A10D6 /* CourseListViewController.xib */,
-				D4A0C3BD16A4DB2A007A10D6 /* courses.json */,
+				D48CE34A16A5AE130021FB10 /* PTPCourse.h */,
+				D48CE34B16A5AE130021FB10 /* PTPCourse.m */,
+				D48CE34C16A5AE130021FB10 /* PTPCourseCell.h */,
+				D48CE34D16A5AE130021FB10 /* PTPCourseCell.m */,
+				D48CE34E16A5AE130021FB10 /* PTPCourseCell.xib */,
+				D48CE34F16A5AE130021FB10 /* PTPCourseDetailViewController.h */,
+				D48CE35016A5AE130021FB10 /* PTPCourseDetailViewController.m */,
+				D48CE35116A5AE130021FB10 /* PTPCourseDetailViewController.xib */,
+				D4A0C3BA16A4DB2A007A10D6 /* PTPCourseListViewController.h */,
+				D4A0C3BB16A4DB2A007A10D6 /* PTPCourseListViewController.m */,
+				D4A0C3BC16A4DB2A007A10D6 /* PTPCourseListViewController.xib */,
 			);
 			path = Courses;
 			sourceTree = "<group>";
@@ -353,13 +395,12 @@
 		D4A0C3C416A4E822007A10D6 /* Shopping */ = {
 			isa = PBXGroup;
 			children = (
-				D4A0C3C516A4E822007A10D6 /* OrderCell.h */,
-				D4A0C3C616A4E822007A10D6 /* OrderCell.m */,
-				D4A0C3C716A4E822007A10D6 /* OrderCell.xib */,
-				D4A0C3C816A4E822007A10D6 /* shoppingCart.json */,
-				D4A0C3C916A4E822007A10D6 /* ShoppingListViewController.h */,
-				D4A0C3CA16A4E822007A10D6 /* ShoppingListViewController.m */,
-				D4A0C3CB16A4E822007A10D6 /* ShoppingListViewController.xib */,
+				D4A0C3C516A4E822007A10D6 /* PTPOrderCell.h */,
+				D4A0C3C616A4E822007A10D6 /* PTPOrderCell.m */,
+				D4A0C3C716A4E822007A10D6 /* PTPOrderCell.xib */,
+				D4A0C3C916A4E822007A10D6 /* PTPShoppingListViewController.h */,
+				D4A0C3CA16A4E822007A10D6 /* PTPShoppingListViewController.m */,
+				D4A0C3CB16A4E822007A10D6 /* PTPShoppingListViewController.xib */,
 			);
 			path = Shopping;
 			sourceTree = "<group>";
@@ -433,21 +474,23 @@
 				D48CD68F16A1D0120094AC58 /* wine-glass.png in Resources */,
 				D48DBB1016A224BC00B3F5FD /* bouteille.png in Resources */,
 				D48DBB1116A224BC00B3F5FD /* bouteille@2x.png in Resources */,
-				D48DBB1816A224BC00B3F5FD /* File.json in Resources */,
-				D48DBB1A16A224BC00B3F5FD /* LocalFileViewController.xib in Resources */,
 				D48DBB1B16A224BC00B3F5FD /* MSToolTips-Info.plist in Resources */,
 				D48DBB1E16A224BC00B3F5FD /* SampleLoad.json in Resources */,
 				D491D00116A395FC004E9EDB /* info1.png in Resources */,
-				D48DD05116A44FD60047CC10 /* WineViewController.xib in Resources */,
-				D4A0C3C016A4DB2A007A10D6 /* CourseCell.xib in Resources */,
-				D4A0C3C216A4DB2A007A10D6 /* CourseListViewController.xib in Resources */,
-				D4A0C3C316A4DB2A007A10D6 /* courses.json in Resources */,
-				D4A0C3CD16A4E822007A10D6 /* OrderCell.xib in Resources */,
+				D48DD05116A44FD60047CC10 /* PTPWineViewController.xib in Resources */,
+				D4A0C3C216A4DB2A007A10D6 /* PTPCourseListViewController.xib in Resources */,
+				D4A0C3CD16A4E822007A10D6 /* PTPOrderCell.xib in Resources */,
 				D4A0C3CE16A4E822007A10D6 /* shoppingCart.json in Resources */,
-				D4A0C3D016A4E822007A10D6 /* ShoppingListViewController.xib in Resources */,
+				D4A0C3D016A4E822007A10D6 /* PTPShoppingListViewController.xib in Resources */,
 				D491BB8116A4F11100CD4C4D /* wines.json in Resources */,
 				D48CE34716A5A9AC0021FB10 /* CHANGELOG.md in Resources */,
 				D48CE34916A5A9AC0021FB10 /* README.md in Resources */,
+				D48CE35516A5AE130021FB10 /* PTPCourseCell.xib in Resources */,
+				D48CE35716A5AE130021FB10 /* PTPCourseDetailViewController.xib in Resources */,
+				D48CE35816A5AE130021FB10 /* courses.json in Resources */,
+				D48A9EA516A5C3A300F920F9 /* vigne.jpg in Resources */,
+				D48F6E2016A5D04400297BCA /* obama.jpg in Resources */,
+				D45F1DF516A60F78000148D0 /* wine1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,19 +509,19 @@
 				D48DBB1216A224BC00B3F5FD /* Contact.m in Sources */,
 				D48DBB1616A224BC00B3F5FD /* DownloadManager.m in Sources */,
 				D48DBB1716A224BC00B3F5FD /* DownloadOperation.m in Sources */,
-				D48DBB1916A224BC00B3F5FD /* LocalFileViewController.m in Sources */,
 				D48DBB1F16A224BC00B3F5FD /* SampleLoadViewController.m in Sources */,
-				D4A49E9016A48149008506A5 /* PTPGestionCommandes.m in Sources */,
-				D4A0C3BE16A4DB2A007A10D6 /* Course.m in Sources */,
-				D4A0C3BF16A4DB2A007A10D6 /* CourseCell.m in Sources */,
-				D4A0C3C116A4DB2A007A10D6 /* CourseListViewController.m in Sources */,
-				D4A0C3CC16A4E822007A10D6 /* OrderCell.m in Sources */,
-				D4A0C3CF16A4E822007A10D6 /* ShoppingListViewController.m in Sources */,
-				D491BB7F16A4F11100CD4C4D /* Wine.m in Sources */,
-				D491BB8016A4F11100CD4C4D /* WineCatalogManager.m in Sources */,
-				D495384216A4F384004C8972 /* WineViewController.m in Sources */,
+				D4A49E9016A48149008506A5 /* PTPGestionCommandesDelegate.m in Sources */,
+				D4A0C3C116A4DB2A007A10D6 /* PTPCourseListViewController.m in Sources */,
+				D4A0C3CC16A4E822007A10D6 /* PTPOrderCell.m in Sources */,
+				D4A0C3CF16A4E822007A10D6 /* PTPShoppingListViewController.m in Sources */,
+				D491BB7F16A4F11100CD4C4D /* PTPWine.m in Sources */,
+				D491BB8016A4F11100CD4C4D /* PTPWineCatalogManager.m in Sources */,
+				D495384216A4F384004C8972 /* PTPWineViewController.m in Sources */,
 				D48CE34016A5A9960021FB10 /* iCarousel.m in Sources */,
 				D48CE34816A5A9AC0021FB10 /* JSONKit.m in Sources */,
+				D48CE35316A5AE130021FB10 /* PTPCourse.m in Sources */,
+				D48CE35616A5AE130021FB10 /* PTPCourseDetailViewController.m in Sources */,
+				D493F9A416A5F2AC00DE5BA1 /* PTPCourseCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

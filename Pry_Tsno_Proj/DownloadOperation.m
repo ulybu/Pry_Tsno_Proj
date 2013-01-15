@@ -71,12 +71,7 @@
             return;
         }
         
-        // We do not use NSURLResponse, this is just to show you how it works. We could do this instead: (this is the power of nil compare to other languages: having a nil (or NULL) pointer does not trigger an exception)
-        //        NSData *returnedData = [NSURLConnection sendSynchronousRequest:self.request
-        //                                                     returningResponse:nil
-        //                                                                 error:&error];
-        
-        // NSLog(@"%@", [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding]);
+       
     }
     
     // We are here with some string data which should look like a json. We are gonna use some method to create a dictionary or an array from that
