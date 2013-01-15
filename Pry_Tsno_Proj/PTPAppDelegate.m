@@ -13,7 +13,8 @@
 #import "PTPVideosViewController.h"
 #import "PTPProfilViewController.h"
 #import "PTPAboutViewController.h"
-#import "WineViewController.h";
+#import "WineViewController.h"
+#import "CourseListViewController.h"
 
 
 
@@ -21,21 +22,19 @@
 @synthesize tabBarController=_tabBarController;
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 { 
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+   
     UIViewController *vinsViewController, *coursViewController, *commandesViewController,*videosViewController,*profilViewController,*aboutViewController;
     
     //    VINS
-    //    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
     vinsViewController = [[WineViewController alloc] initWithNibName:@"WineViewController" bundle:nil];
     UITabBarItem *tabBarItemVins= [[UITabBarItem alloc] initWithTitle:@"Vins"
                                                                 image: [UIImage imageNamed:@"wine-glass.png"] tag:1];
     vinsViewController.tabBarItem=tabBarItemVins;
     
     //        COURS
-    coursViewController = [[PTPCoursViewController alloc] initWithNibName:@"PTPCoursViewController" bundle:nil];
+    coursViewController = [[CourseListViewController alloc] initWithNibName:@"CourseListViewController" bundle:nil];
     UITabBarItem *tabBarItemCours= [[UITabBarItem alloc] initWithTitle:@"Cours"
                                                                  image: [UIImage imageNamed:@"calendar.png"] tag:2];
     coursViewController.tabBarItem=tabBarItemCours;
@@ -80,7 +79,7 @@
     
 //    COURS
     coursNavigationController = [[UINavigationController alloc] initWithRootViewController:coursViewController];
-//    coursNavigationController.title = @"Cours";
+    coursNavigationController.title = @"Cours";
     [coursNavigationController setNavigationBarHidden:NO];
     
 //    PROFIL

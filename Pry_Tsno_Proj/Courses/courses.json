@@ -1,0 +1,47 @@
+{
+    "courses": [
+              {
+              "name": "Initiation à l'Oenologie",
+              "date": "2013-04-22",
+              "price": "47,90",
+                "description": "Le côtes du Rhône Guigal a une robe rouge sombre et brillante. Au nez, des arômes de fruits noirs et des notes d’épices. En bouche ce vin a des tanins arrondis, très enrobés et bien présents. Ce vin est élégant et fin grâce à un bel équilibre entre tanins et fruits.",
+                "id": "0"
+              },
+              {
+              "name": "Découverte des terroirs et sépages de Champagne",
+              "date": "2013-03-12",
+              "price": "42,70",
+                "description": "C'est un vin arborant une couleur rouge violacée opaque. Un nez assez puissant qui souvre sur des notes de cassis, de poivron vert et de vanille puis des effluves de cacao et de garrigue. Il possède une agréable fraîcheur ainsi que de tanins souples. Tout comme à l'olfaction, il s'affirme par des saveurs d'épices et de fruits noirs, une bouche ample qui se termine dans une finale assez persistante.",
+                "id": "1"
+
+              },
+                {
+                "name": "Les vins bio et naturels",
+                "date": "2013-05-09",
+                "price": "47,90",
+                "description": "Le côtes du Rhône Guigal a une robe rouge sombre et brillante. Au nez, des arômes de fruits noirs et des notes d’épices. En bouche ce vin a des tanins arrondis, très enrobés et bien présents. Ce vin est élégant et fin grâce à un bel équilibre entre tanins et fruits.",
+                "id": "2"
+                },
+                {
+                "name": "Champagne, finesse des bulles",
+                "date": "2013-04-12",
+                "price": "47,90",
+                "description": "Le côtes du Rhône Guigal a une robe rouge sombre et brillante. Au nez, des arômes de fruits noirs et des notes d’épices. En bouche ce vin a des tanins arrondis, très enrobés et bien présents. Ce vin est élégant et fin grâce à un bel équilibre entre tanins et fruits.",
+                "id": "3"
+                },
+                {
+                "name": "Les grands Crus de France",
+                "date": "2013-06-15",
+                "price": "57,90",
+                "description": "Le côtes du Rhône Guigal a une robe rouge sombre et brillante. Au nez, des arômes de fruits noirs et des notes d’épices. En bouche ce vin a des tanins arrondis, très enrobés et bien présents. Ce vin est élégant et fin grâce à un bel équilibre entre tanins et fruits.",
+                "id": "4"
+                },
+              {
+              "name": "Accord mets/vin, science ou art?",
+              "date": "2013-02-06",
+              "price": "52,50",
+                "description": "Beau vin rouge sombre aux arômes délicats de boisé, petits fruits rouges de cerise et de fraise. Vin tannique et massif, remarquable de fraîcheur.",
+                "id": "5"
+              }
+              ]
+}
