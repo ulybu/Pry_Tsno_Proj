@@ -11,6 +11,7 @@
 @implementation Course
 @synthesize name;
 @synthesize date;
+@synthesize description;
 @synthesize ID;
 
 @end

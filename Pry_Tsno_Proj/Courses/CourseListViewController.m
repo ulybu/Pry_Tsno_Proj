@@ -8,6 +8,7 @@
 
 #import "CourseListViewController.h"
 #import "CourseCell.h"
+#import "CourseDetailViewController.h"
 #import "JSONKit.h"
 #import "Course.h"
 
@@ -63,6 +64,7 @@
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
         [dateFormatter setDateFormat:@"yyyy-MM-dd"];
         course.date = [dateFormatter dateFromString:[courseJSON valueForKey:@"date"]];
+        course.description = [courseJSON valueForKey:@"description"];
         course.ID = [[courseJSON valueForKey:@"id"] integerValue];
         [tempCourseCatalog addObject: course];
     }
@@ -146,13 +148,12 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSLog(@"clicking on row %d",[indexPath row]);
     // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+    CourseDetailViewController *courseDetailViewController = [[CourseDetailViewController alloc] initWithNibName:@"CourseDetailViewController" bundle:nil course:((Course*)[courseList objectAtIndex:[indexPath row]])];
+    // ...
+    // Pass the selected object to the new view controller.
+    [self.navigationController pushViewController:courseDetailViewController animated:YES];
 }
 
 

@@ -12,10 +12,12 @@
 {
     NSString * name;
     NSDate * date;
+    NSString * description;
     NSInteger ID;
 }
 
 @property (nonatomic,copy) NSString * name;
 @property (nonatomic,copy) NSDate * date;
+@property (nonatomic,copy) NSString * description;
 @property (nonatomic,assign) NSInteger ID;
 @end

@@ -29,12 +29,13 @@
 //        On se défini delegate de la gestion des commandes
         _gestionnaire=[PTPGestionCommandes sharedGestionCommandes];
         [_gestionnaire setCommandesController:self];
+        NSLog(@"je me set dele");
         
 //        Chargement depuis le Json et calcu du nombre total d'éléments
-//        ....
-        
-//        On met à jour le gestionnaire puis on affiche le badge
-//        [_gestionnaire setCommandesCount: NOMBRE DE COMMANDES];
+//        [self parseShoppingList];
+//        NSLog(@"%d",[shoppingList count]);
+//        [_gestionnaire setCommandesCount: [shoppingList count]];
+//        [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d",[shoppingList count]]];
 //        [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d",[_gestionnaire commandesCount]]];
         
             }
@@ -45,9 +46,15 @@
 //    Quoi faire quand on clique sur le caddie dans l'onglet vin'
 //    Genre on re parse le json
     
-//    On met à jour le gestionnaire puis on affiche le badge
-    [_gestionnaire setCommandesCount:[_gestionnaire commandesCount]+1];
+    
+    [self parseShoppingList];
+    [_gestionnaire setCommandesCount: [shoppingList count]];
+    //    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d",[shoppingList count]]];
     [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d",[_gestionnaire commandesCount]]];
+
+//    On met à jour le gestionnaire puis on affiche le badge
+//    [_gestionnaire setCommandesCount:NOM];
+//    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d",[_gestionnaire commandesCount]]];
 }
 
 - (void)viewDidLoad
@@ -55,6 +62,10 @@
     [super viewDidLoad];
     
     [self parseShoppingList];
+    [_gestionnaire setCommandesCount: [shoppingList count]];
+//    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d",[shoppingList count]]];
+    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d",[_gestionnaire commandesCount]]];
+
     self.tableView.backgroundColor = [UIColor underPageBackgroundColor];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -81,9 +92,9 @@
     for (NSObject *orderJSON in shoppingCart){
         Wine * wine = [[Wine alloc] init];
         wine.name = [orderJSON valueForKey:@"name"];
-        NSLog(@"nom du vin: %@",wine.name);
+//        NSLog(@"nom du vin: %@",wine.name);
         wine.price = [[orderJSON valueForKey:@"price"] floatValue];
-        NSLog(@"price: %f",wine.price);
+//        NSLog(@"price: %f",wine.price);
         wine.year = [[orderJSON valueForKey:@"year"] integerValue];
         wine.ID = [[orderJSON valueForKey:@"id"] integerValue];
         [tempShoppingList addObject: wine];

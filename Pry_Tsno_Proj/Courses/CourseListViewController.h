@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-
 @interface CourseListViewController : UITableViewController
 {
     NSArray * courseList;
