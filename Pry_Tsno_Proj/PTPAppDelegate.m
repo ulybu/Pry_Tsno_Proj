@@ -7,9 +7,6 @@
 //
 
 #import "PTPAppDelegate.h"
-#import "PTPVinsViewController.h"
-#import "PTPCoursViewController.h"
-#import "PTPCommandesViewController.h"
 #import "PTPVideosViewController.h"
 #import "PTPProfilViewController.h"
 #import "PTPAboutViewController.h"
