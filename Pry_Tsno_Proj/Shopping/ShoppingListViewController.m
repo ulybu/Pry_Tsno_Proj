@@ -29,49 +29,30 @@
 //        On se défini delegate de la gestion des commandes
         _gestionnaire=[PTPGestionCommandes sharedGestionCommandes];
         [_gestionnaire setCommandesController:self];
-        NSLog(@"je me set dele");
-        
-//        Chargement depuis le Json et calcu du nombre total d'éléments
-//        [self parseShoppingList];
-//        NSLog(@"%d",[shoppingList count]);
-//        [_gestionnaire setCommandesCount: [shoppingList count]];
-//        [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d",[shoppingList count]]];
-//        [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d",[_gestionnaire commandesCount]]];
-        
+                
             }
     return self;
 }
-- (void) nouvelleCommande:(NSInteger)vinID{
+- (void) nouvelleCommande:(Wine*)vin{
     
-//    Quoi faire quand on clique sur le caddie dans l'onglet vin'
-//    Genre on re parse le json
+    if(vin!=nil){
+        [shoppingList addObject: vin];
+        [self.tableView reloadData];
+    }else{
+         [self parseShoppingList];
+    }
     
-    
-    [self parseShoppingList];
+   
     [_gestionnaire setCommandesCount: [shoppingList count]];
-    //    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d",[shoppingList count]]];
     [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d",[_gestionnaire commandesCount]]];
 
-//    On met à jour le gestionnaire puis on affiche le badge
-//    [_gestionnaire setCommandesCount:NOM];
-//    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d",[_gestionnaire commandesCount]]];
-}
+    }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    [self parseShoppingList];
-    [_gestionnaire setCommandesCount: [shoppingList count]];
-//    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d",[shoppingList count]]];
-    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d",[_gestionnaire commandesCount]]];
 
     self.tableView.backgroundColor = [UIColor underPageBackgroundColor];
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning
@@ -87,19 +68,15 @@
                             initWithParseOptions:JKParseOptionNone];
     NSObject* jsonObject = [decoder objectWithData:jsonData];
     NSArray *shoppingCart = [jsonObject valueForKey:@"wines"];
-    NSLog(@"number of orders %d", [shoppingCart count]);
-    NSMutableArray * tempShoppingList =  [[NSMutableArray alloc] init];
+    shoppingList =  [[NSMutableArray alloc] init];
     for (NSObject *orderJSON in shoppingCart){
         Wine * wine = [[Wine alloc] init];
         wine.name = [orderJSON valueForKey:@"name"];
-//        NSLog(@"nom du vin: %@",wine.name);
         wine.price = [[orderJSON valueForKey:@"price"] floatValue];
-//        NSLog(@"price: %f",wine.price);
         wine.year = [[orderJSON valueForKey:@"year"] integerValue];
         wine.ID = [[orderJSON valueForKey:@"id"] integerValue];
-        [tempShoppingList addObject: wine];
+        [shoppingList addObject: wine];
     }
-    shoppingList = [[NSArray alloc] initWithArray:tempShoppingList];
 }
 
 #pragma mark - Table view data source

@@ -38,33 +38,19 @@
 }
 
 -(void) fillInfo{
-    _nameLabel.text = _course.name;
+    _nameLabel.text=_course.name;
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
     [dateFormatter setDateFormat:@"dd/MM/yyyy"];
-	NSString *dateString = [dateFormatter stringFromDate:course.date];
+	NSString *dateString = [dateFormatter stringFromDate:_course.date];
     _dateLabel.text = [NSString stringWithFormat:@"%@", dateString];
     _description.text = _course.description;
+
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _nameLabel.text = _course.name;
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
-    [dateFormatter setDateFormat:@"dd/MM/yyyy"];
-	NSString *dateString = [dateFormatter stringFromDate:_course.date];
-    _dateLabel.text = [NSString stringWithFormat:@"%@", dateString];
-    NSLog(@"before descr");
-    NSLog(_course.description);
-    
-    NSLog(@"after descr");
-    if(_course.description==nil){
-        
-        NSLog(@"nill descrp");
-    }
-    _description.text = _course.description;
-
-    // Do any additional setup after loading the view from its nib.
+    [self fillInfo];
 }
 
 - (void)didReceiveMemoryWarning

@@ -32,7 +32,6 @@
                             initWithParseOptions:JKParseOptionNone];
     NSObject* jsonObject = [decoder objectWithData:jsonData];
     NSArray *wines = [jsonObject valueForKey:@"wines"];
-    NSLog(@"number of wines %d", [wines count]);
     NSMutableArray * tempWineCatalog =  [[NSMutableArray alloc] init];
     for (NSObject *wineJSON in wines){
         Wine * wine = [[Wine alloc] init];

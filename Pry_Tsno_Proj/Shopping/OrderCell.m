@@ -30,7 +30,7 @@
 -(void)configureWithWine:(Wine*)wine
 {
     self.nameLabel.text = [NSString stringWithFormat:@"%@ %d", wine.name, wine.year];
-    NSLog(@"nameLabel = %@",wine.name);
+     NSLog(@"Log subliminal (encore): Ulysse et Paul sont trop cool...");
     self.priceLabel.text = [NSString stringWithFormat:@"%.2f€", wine.price];
 }
 

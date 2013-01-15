@@ -41,12 +41,14 @@
     if(_delegate==nil){
         _delegate=  _gestionnaire.commandesController;
     }
-    [_delegate nouvelleCommande:12];
+    [_delegate nouvelleCommande:[wineCatalogManager.wineCatalog objectAtIndex:_carousel.currentItemIndex]];
 }
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+     _delegate=  _gestionnaire.commandesController;
+ 
+    [_delegate nouvelleCommande:nil];
     // LE RESTE
     self.view.backgroundColor = [UIColor scrollViewTexturedBackgroundColor];
     wineCatalogManager = [[WineCatalogManager alloc] init];
@@ -92,8 +94,7 @@
     priceLabel.text = [NSString stringWithFormat:@"%.02f€", ((Wine*)[wineCatalogManager.wineCatalog objectAtIndex:0]).price];
     yearLabel.text = [NSString stringWithFormat:@"%d", ((Wine*)[wineCatalogManager.wineCatalog objectAtIndex:0]).year];
     descriptionTextView.text = ((Wine*)[wineCatalogManager.wineCatalog objectAtIndex:0]).description;
-    
-//    imageTest = [[UIImageView alloc] initWithImage:[wineCatalogManager getImageAtIndex:0]];
+    _carousel.currentItemIndex = 0;
     
 }
 

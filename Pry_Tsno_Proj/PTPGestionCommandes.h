@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Wine.h"
 
 //@class ShoppingListViewController;
 @protocol GestionCommandesDelegate ;
@@ -24,13 +25,12 @@
 
 @protocol GestionCommandesDelegate <NSObject>
 
-@optional
+@required
 //- (void) gestionCommandes:(PTPGestionCommandes*)gestionCommandes nouvelleCommande:(NSInteger)vinID;
 //
 //- (void) gestionCommandes:(PTPGestionCommandes*)gestionCommandes setCommandesCount:(NSInteger)count;
 
 
-- (void) nouvelleCommande:(NSInteger)vinID;
+- (void) nouvelleCommande:(Wine*)vinID;
 
-- (void) setCommandesCount:(NSInteger)count;
 @end

@@ -36,7 +36,7 @@
     [dateFormatter setDateFormat:@"dd/MM/yyyy"];
 	NSString *dateString = [dateFormatter stringFromDate:course.date];
     self.nameLabel.text = course.name;
-    NSLog(@"nameLabel = %@",course.name);
+    NSLog(@"Log subliminal : 20 sur 20, 20 sur 20...");
     self.dateLabel.text = [NSString stringWithFormat:@"%@", dateString];
 }
 

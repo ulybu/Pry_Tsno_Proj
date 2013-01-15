@@ -55,12 +55,10 @@
                             initWithParseOptions:JKParseOptionNone];
     NSObject* jsonObject = [decoder objectWithData:jsonData];
     NSArray *courses = [jsonObject valueForKey:@"courses"];
-    NSLog(@"number of courses %d", [courses count]);
     NSMutableArray * tempCourseCatalog =  [[NSMutableArray alloc] init];
     for (NSObject *courseJSON in courses){
         Course * course = [[Course alloc] init];
         course.name = [courseJSON valueForKey:@"name"];
-        NSLog(@"nom du cours: %@",course.name);
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
         [dateFormatter setDateFormat:@"yyyy-MM-dd"];
         course.date = [dateFormatter dateFromString:[courseJSON valueForKey:@"date"]];
@@ -148,7 +146,6 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"clicking on row %d",[indexPath row]);
     // Navigation logic may go here. Create and push another view controller.
     CourseDetailViewController *courseDetailViewController = [[CourseDetailViewController alloc] initWithNibName:@"CourseDetailViewController" bundle:nil course:((Course*)[courseList objectAtIndex:[indexPath row]])];
     // ...

@@ -12,7 +12,7 @@
 @interface ShoppingListViewController : UITableViewController<GestionCommandesDelegate>
 {
     PTPGestionCommandes *_gestionnaire;
-    NSArray * shoppingList;
+    NSMutableArray * shoppingList;
 }
 
 @property (nonatomic,copy) NSArray * shoppingList;

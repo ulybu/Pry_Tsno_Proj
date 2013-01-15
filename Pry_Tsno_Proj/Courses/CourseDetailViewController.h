@@ -10,14 +10,15 @@
 #import "Course.h"
 
 @interface CourseDetailViewController : UIViewController{
-    UILabel * nameLabel;
-    UILabel * dateLabel;
+
+    UITextField * nameLabel;
+    UITextField *dateLabel;
     UITextView * description;
     Course * course;
 }
 
-@property (nonatomic,weak) IBOutlet UILabel * nameLabel;
-@property (nonatomic,weak) IBOutlet UILabel * dateLabel;
+@property (nonatomic,weak) IBOutlet UITextField * nameLabel;
+@property (nonatomic,weak) IBOutlet UITextField *dateLabel;
 @property (nonatomic,weak) IBOutlet UITextView * description;
 @property (nonatomic,assign) Course * course;
 
