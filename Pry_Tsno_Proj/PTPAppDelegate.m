@@ -10,9 +10,9 @@
 #import "PTPVideosViewController.h"
 #import "PTPProfilViewController.h"
 #import "PTPAboutViewController.h"
-#import "WineViewController.h"
-#import "CourseListViewController.h"
-#import "ShoppingListViewController.h"
+#import "PTPWineViewController.h"
+#import "PTPCourseListViewController.h"
+#import "PTPShoppingListViewController.h"
 
 
 
@@ -26,19 +26,19 @@
     UIViewController *vinsViewController, *coursViewController, *commandesViewController,*videosViewController,*profilViewController,*aboutViewController;
     
     //    VINS
-    vinsViewController = [[WineViewController alloc] initWithNibName:@"WineViewController" bundle:nil];
+    vinsViewController = [[PTPWineViewController alloc] initWithNibName:@"PTPWineViewController" bundle:nil];
     UITabBarItem *tabBarItemVins= [[UITabBarItem alloc] initWithTitle:@"Vins"
                                                                 image: [UIImage imageNamed:@"wine-glass.png"] tag:1];
     vinsViewController.tabBarItem=tabBarItemVins;
     
     //        COURS
-    coursViewController = [[CourseListViewController alloc] initWithNibName:@"CourseListViewController" bundle:nil];
+    coursViewController = [[PTPCourseListViewController alloc] initWithNibName:@"PTPCourseListViewController" bundle:nil];
     UITabBarItem *tabBarItemCours= [[UITabBarItem alloc] initWithTitle:@"Cours"
                                                                  image: [UIImage imageNamed:@"calendar.png"] tag:2];
     coursViewController.tabBarItem=tabBarItemCours;
     
     //        COMMANDES
-    commandesViewController = [[ShoppingListViewController alloc] initWithNibName:@"ShoppingListViewController" bundle:nil];
+    commandesViewController = [[PTPShoppingListViewController alloc] initWithNibName:@"ShoppingListViewController" bundle:nil];
     
     UITabBarItem *tabBarItemCommande= [[UITabBarItem alloc] initWithTitle:@"Achats"
                                                                     image: [UIImage imageNamed:@"shopping-cart.png"] tag:3];
