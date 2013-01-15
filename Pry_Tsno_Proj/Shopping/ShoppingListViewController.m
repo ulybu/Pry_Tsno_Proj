@@ -19,19 +19,41 @@
 
 @synthesize shoppingList;
 
-- (id)initWithStyle:(UITableViewStyle)style
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super initWithStyle:style];
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+//        titre
+        self.title=@"Mes Commandes";
         
-    }
+//        On se défini delegate de la gestion des commandes
+        _gestionnaire=[PTPGestionCommandes sharedGestionCommandes];
+        [_gestionnaire setCommandesController:self];
+        
+//        Chargement depuis le Json et calcu du nombre total d'éléments
+//        ....
+        
+//        On met à jour le gestionnaire puis on affiche le badge
+//        [_gestionnaire setCommandesCount: NOMBRE DE COMMANDES];
+//        [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d",[_gestionnaire commandesCount]]];
+        
+            }
     return self;
+}
+- (void) nouvelleCommande:(NSInteger)vinID{
+    
+//    Quoi faire quand on clique sur le caddie dans l'onglet vin'
+//    Genre on re parse le json
+    
+//    On met à jour le gestionnaire puis on affiche le badge
+    [_gestionnaire setCommandesCount:[_gestionnaire commandesCount]+1];
+    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d",[_gestionnaire commandesCount]]];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title=@"Mes Commandes";
+    
     [self parseShoppingList];
     self.tableView.backgroundColor = [UIColor underPageBackgroundColor];
     // Uncomment the following line to preserve selection between presentations.

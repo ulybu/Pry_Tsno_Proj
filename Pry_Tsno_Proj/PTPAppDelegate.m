@@ -43,7 +43,7 @@
     //        COMMANDES
     commandesViewController = [[ShoppingListViewController alloc] initWithNibName:@"ShoppingListViewController" bundle:nil];
     
-    UITabBarItem *tabBarItemCommande= [[UITabBarItem alloc] initWithTitle:@"Commande"
+    UITabBarItem *tabBarItemCommande= [[UITabBarItem alloc] initWithTitle:@"Achats"
                                                                     image: [UIImage imageNamed:@"shopping-cart.png"] tag:3];
     commandesViewController.tabBarItem=tabBarItemCommande;
     

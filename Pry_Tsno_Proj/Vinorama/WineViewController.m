@@ -21,31 +21,31 @@
 @end
 
 @implementation WineViewController
+@synthesize delegate=_delegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+//        titre et item de la nav bar
         self.title=@"Vins Disponibles";
         UIBarButtonItem *shopItem = [[UIBarButtonItem alloc]  initWithImage:[UIImage imageNamed:@"shopping-cart"] style:UIBarButtonItemStylePlain target:self action:@selector(addToShopCart:)];
         self.navigationItem.rightBarButtonItem=shopItem;
+        
+        //    Gestionnaire de Commandes
+        _gestionnaire = [PTPGestionCommandes sharedGestionCommandes];
     }
     return self;
 }
 - (void) addToShopCart : (id)sender {
-//    if(_delegate==nil){
-//        NSLog(@"aaaaa");
-//        _delegate=_gestionnaire.commandesController;
-//    }
-//    [self.tabBarItem setBadgeValue:@"3"];
-//    [_delegate nouvelleCommande:12];
+    if(_delegate==nil){
+        _delegate=  _gestionnaire.commandesController;
+    }
+    [_delegate nouvelleCommande:12];
 }
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    //    Gestionnaire de Commandes
-//    _gestionnaire = [PTPGestionCommandes sharedGestionCommandes];
     
     // LE RESTE
     self.view.backgroundColor = [UIColor scrollViewTexturedBackgroundColor];

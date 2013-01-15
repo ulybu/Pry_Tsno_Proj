@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "iCarousel.h"
 #import "WineCatalogManager.h"
-
+#import "PTPGestionCommandes.h"
 
 
 @interface WineViewController : UIViewController <iCarouselDataSource, iCarouselDelegate>
@@ -21,8 +21,9 @@
     UILabel * yearLabel;
     
     WineCatalogManager *wineCatalogManager;
+    PTPGestionCommandes *_gestionnaire;
     
-//    UIImageView *imageTest;
-}
 
+}
+@property (nonatomic,assign) id <GestionCommandesDelegate> delegate;
 @end

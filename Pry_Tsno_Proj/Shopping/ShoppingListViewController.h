@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PTPGestionCommandes.h"
 
-@interface ShoppingListViewController : UITableViewController
+@interface ShoppingListViewController : UITableViewController<GestionCommandesDelegate>
 {
+    PTPGestionCommandes *_gestionnaire;
     NSArray * shoppingList;
 }
 

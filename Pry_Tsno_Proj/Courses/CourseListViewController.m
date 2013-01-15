@@ -19,10 +19,11 @@
 
 @synthesize courseList;
 
-- (id)initWithStyle:(UITableViewStyle)style
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super initWithStyle:style];
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+        self.title=@"Cours à venir";
     }
     return self;
 }
@@ -31,7 +32,7 @@
 {
     [super viewDidLoad];
     [self parseCourseList];
-    self.title=@"Cours à venir";
+    
     self.tableView.backgroundColor = [UIColor underPageBackgroundColor];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
