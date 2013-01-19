@@ -38,7 +38,7 @@
     coursViewController.tabBarItem=tabBarItemCours;
     
     //        COMMANDES
-    commandesViewController = [[PTPShoppingListViewController alloc] initWithNibName:@"ShoppingListViewController" bundle:nil];
+    commandesViewController = [[PTPShoppingListViewController alloc] initWithNibName:@"PTPShoppingListViewController" bundle:nil];
     
     UITabBarItem *tabBarItemCommande= [[UITabBarItem alloc] initWithTitle:@"Achats"
                                                                     image: [UIImage imageNamed:@"shopping-cart.png"] tag:3];

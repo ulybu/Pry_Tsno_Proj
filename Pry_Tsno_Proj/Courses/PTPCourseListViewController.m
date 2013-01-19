@@ -147,7 +147,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Navigation logic may go here. Create and push another view controller.
-    PTPCourseDetailViewController *courseDetailViewController = [[PTPCourseDetailViewController alloc] initWithNibName:@"CourseDetailViewController" bundle:nil course:((PTPCourse*)[courseList objectAtIndex:[indexPath row]])];
+    PTPCourseDetailViewController *courseDetailViewController = [[PTPCourseDetailViewController alloc] initWithNibName:@"PTPCourseDetailViewController" bundle:nil course:((PTPCourse*)[courseList objectAtIndex:[indexPath row]])];
     // ...
     // Pass the selected object to the new view controller.
     [self.navigationController pushViewController:courseDetailViewController animated:YES];
