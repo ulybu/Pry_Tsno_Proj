@@ -6,16 +6,16 @@
 //  Copyright (c) 2013 Paul. All rights reserved.
 //
 
+
 #import "PTPWineViewController.h"
 #import "PTPWine.h"
-
 
 @interface WineOverlayView : UIView
 
 @end
 
 @interface PTPWineViewController ()
-{
+{  ;
     WineOverlayView *_overlay;
 }
 @end
