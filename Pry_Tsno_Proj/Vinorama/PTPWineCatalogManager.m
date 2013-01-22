@@ -19,7 +19,7 @@
 - (id) init{
     self = [super init];
     if (self){
-        
+        NSLog(@"subliminal system log: Here comes the back up");
         [self parseWineCatalog];
     }
     return self;
