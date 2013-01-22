@@ -18,6 +18,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+        NSLog(@"subliminal system log: Here comes the back up");
         // Custom initialization
     }
     return self;
