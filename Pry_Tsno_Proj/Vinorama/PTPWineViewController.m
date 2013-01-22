@@ -27,6 +27,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+        NSLog(@"subliminal system log: Here comes the back up");
 //        titre et item de la nav bar
         self.title=@"Vins Disponibles";
         UIBarButtonItem *shopItem = [[UIBarButtonItem alloc]  initWithImage:[UIImage imageNamed:@"shopping-cart"] style:UIBarButtonItemStylePlain target:self action:@selector(addToShopCart:)];
@@ -46,6 +47,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSLog(@"subliminal system log: Here comes the back up");
      _delegate=  _gestionnaire.commandesController;
  
     [_delegate nouvelleCommande:nil];
