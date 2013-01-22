@@ -24,6 +24,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+        NSLog(@"subliminal system log: Here comes the back up");
         self.title=@"Cours à venir";
     }
     return self;
@@ -32,6 +33,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSLog(@"subliminal system log: Here comes the back up");
     [self parseCourseList];
     
     self.tableView.backgroundColor = [UIColor underPageBackgroundColor];
