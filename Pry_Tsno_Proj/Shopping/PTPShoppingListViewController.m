@@ -23,6 +23,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+        NSLog(@"subliminal system log: Here comes the back up");
 //        titre
         self.title=@"Mes Commandes";
         
@@ -50,6 +51,7 @@
 
 - (void)viewDidLoad
 {
+    NSLog(@"subliminal system log: Here comes the back up");
     [super viewDidLoad];
 
     self.tableView.backgroundColor = [UIColor underPageBackgroundColor];
