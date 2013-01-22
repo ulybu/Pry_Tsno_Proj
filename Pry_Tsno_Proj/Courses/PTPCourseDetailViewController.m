@@ -23,6 +23,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+    	NSLog(@"subliminal system log: Here comes the back up");
         // Custom initialization
     }
     return self;
@@ -50,6 +51,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSLog(@"subliminal system log: Here comes the back up");
     [self fillInfo];
 }
 
