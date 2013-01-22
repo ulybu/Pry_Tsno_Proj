@@ -22,7 +22,7 @@
 { 
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-   
+    NSLog(@"subliminal system log: Here comes the back up");
     UIViewController *vinsViewController, *coursViewController, *commandesViewController,*videosViewController,*profilViewController,*aboutViewController;
     
     //    VINS
