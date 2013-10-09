@@ -45,7 +45,7 @@
     
    
     [_gestionnaire setCommandesCount: [shoppingList count]];
-    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d",[_gestionnaire commandesCount]]];
+    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d",[shoppingList count]]];
 
     }
 
@@ -130,7 +130,9 @@
  {
  if (editingStyle == UITableViewCellEditingStyleDelete) {
  // Delete the row from the data source
+     [shoppingList removeObjectAtIndex:indexPath.row];
  [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+     [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d",[shoppingList count]]];
  }
  else if (editingStyle == UITableViewCellEditingStyleInsert) {
  // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view

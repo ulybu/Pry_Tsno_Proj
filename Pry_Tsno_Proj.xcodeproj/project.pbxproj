@@ -23,10 +23,6 @@
 		D48CD68D16A1D0120094AC58 /* tv.png in Resources */ = {isa = PBXBuildFile; fileRef = D48CD68516A1D0120094AC58 /* tv.png */; };
 		D48CD68E16A1D0120094AC58 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = D48CD68616A1D0120094AC58 /* user.png */; };
 		D48CD68F16A1D0120094AC58 /* wine-glass.png in Resources */ = {isa = PBXBuildFile; fileRef = D48CD68716A1D0120094AC58 /* wine-glass.png */; };
-		D48CE34016A5A9960021FB10 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = D48CE33F16A5A9960021FB10 /* iCarousel.m */; };
-		D48CE34716A5A9AC0021FB10 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = D48CE34316A5A9AC0021FB10 /* CHANGELOG.md */; };
-		D48CE34816A5A9AC0021FB10 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D48CE34516A5A9AC0021FB10 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		D48CE34916A5A9AC0021FB10 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D48CE34616A5A9AC0021FB10 /* README.md */; };
 		D48CE35316A5AE130021FB10 /* PTPCourse.m in Sources */ = {isa = PBXBuildFile; fileRef = D48CE34B16A5AE130021FB10 /* PTPCourse.m */; };
 		D48CE35516A5AE130021FB10 /* PTPCourseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D48CE34E16A5AE130021FB10 /* PTPCourseCell.xib */; };
 		D48CE35616A5AE130021FB10 /* PTPCourseDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D48CE35016A5AE130021FB10 /* PTPCourseDetailViewController.m */; };
@@ -67,6 +63,8 @@
 		D4A0C3CF16A4E822007A10D6 /* PTPShoppingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A0C3CA16A4E822007A10D6 /* PTPShoppingListViewController.m */; };
 		D4A0C3D016A4E822007A10D6 /* PTPShoppingListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4A0C3CB16A4E822007A10D6 /* PTPShoppingListViewController.xib */; };
 		D4A49E9016A48149008506A5 /* PTPGestionCommandesDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A49E8F16A48148008506A5 /* PTPGestionCommandesDelegate.m */; };
+		E042636316AA8ED600B993C9 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = E042636216AA8ED600B993C9 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E042636616AA8EE200B993C9 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = E042636516AA8EE200B993C9 /* iCarousel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,12 +87,6 @@
 		D48CD68516A1D0120094AC58 /* tv.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tv.png; sourceTree = "<group>"; };
 		D48CD68616A1D0120094AC58 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
 		D48CD68716A1D0120094AC58 /* wine-glass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wine-glass.png"; sourceTree = "<group>"; };
-		D48CE33E16A5A9960021FB10 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
-		D48CE33F16A5A9960021FB10 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
-		D48CE34316A5A9AC0021FB10 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
-		D48CE34416A5A9AC0021FB10 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
-		D48CE34516A5A9AC0021FB10 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
-		D48CE34616A5A9AC0021FB10 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		D48CE34A16A5AE130021FB10 /* PTPCourse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPCourse.h; sourceTree = "<group>"; };
 		D48CE34B16A5AE130021FB10 /* PTPCourse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTPCourse.m; sourceTree = "<group>"; };
 		D48CE34C16A5AE130021FB10 /* PTPCourseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPCourseCell.h; sourceTree = "<group>"; };
@@ -155,6 +147,10 @@
 		D4A0C3CB16A4E822007A10D6 /* PTPShoppingListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PTPShoppingListViewController.xib; sourceTree = "<group>"; };
 		D4A49E8E16A48148008506A5 /* PTPGestionCommandesDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPGestionCommandesDelegate.h; sourceTree = "<group>"; };
 		D4A49E8F16A48148008506A5 /* PTPGestionCommandesDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTPGestionCommandesDelegate.m; sourceTree = "<group>"; };
+		E042636116AA8ED600B993C9 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = vendor/JSONKit/JSONKit.h; sourceTree = SOURCE_ROOT; };
+		E042636216AA8ED600B993C9 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = vendor/JSONKit/JSONKit.m; sourceTree = SOURCE_ROOT; };
+		E042636416AA8EE200B993C9 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iCarousel.h; path = vendor/iCarousel/iCarousel/iCarousel.h; sourceTree = SOURCE_ROOT; };
+		E042636516AA8EE200B993C9 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iCarousel.m; path = vendor/iCarousel/iCarousel/iCarousel.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,8 +222,8 @@
 		D48CE33D16A5A9960021FB10 /* iCarousel */ = {
 			isa = PBXGroup;
 			children = (
-				D48CE33E16A5A9960021FB10 /* iCarousel.h */,
-				D48CE33F16A5A9960021FB10 /* iCarousel.m */,
+				E042636416AA8EE200B993C9 /* iCarousel.h */,
+				E042636516AA8EE200B993C9 /* iCarousel.m */,
 			);
 			name = iCarousel;
 			path = ../MSToolTips/vendor/iCarousel/iCarousel;
@@ -236,10 +232,8 @@
 		D48CE34216A5A9AC0021FB10 /* JSONKit */ = {
 			isa = PBXGroup;
 			children = (
-				D48CE34316A5A9AC0021FB10 /* CHANGELOG.md */,
-				D48CE34416A5A9AC0021FB10 /* JSONKit.h */,
-				D48CE34516A5A9AC0021FB10 /* JSONKit.m */,
-				D48CE34616A5A9AC0021FB10 /* README.md */,
+				E042636116AA8ED600B993C9 /* JSONKit.h */,
+				E042636216AA8ED600B993C9 /* JSONKit.m */,
 			);
 			name = JSONKit;
 			path = ../MSToolTips/vendor/LBYoutubeView/Submodules/JSONKit;
@@ -483,8 +477,6 @@
 				D4A0C3CE16A4E822007A10D6 /* shoppingCart.json in Resources */,
 				D4A0C3D016A4E822007A10D6 /* PTPShoppingListViewController.xib in Resources */,
 				D491BB8116A4F11100CD4C4D /* wines.json in Resources */,
-				D48CE34716A5A9AC0021FB10 /* CHANGELOG.md in Resources */,
-				D48CE34916A5A9AC0021FB10 /* README.md in Resources */,
 				D48CE35516A5AE130021FB10 /* PTPCourseCell.xib in Resources */,
 				D48CE35716A5AE130021FB10 /* PTPCourseDetailViewController.xib in Resources */,
 				D48CE35816A5AE130021FB10 /* courses.json in Resources */,
@@ -517,11 +509,11 @@
 				D491BB7F16A4F11100CD4C4D /* PTPWine.m in Sources */,
 				D491BB8016A4F11100CD4C4D /* PTPWineCatalogManager.m in Sources */,
 				D495384216A4F384004C8972 /* PTPWineViewController.m in Sources */,
-				D48CE34016A5A9960021FB10 /* iCarousel.m in Sources */,
-				D48CE34816A5A9AC0021FB10 /* JSONKit.m in Sources */,
 				D48CE35316A5AE130021FB10 /* PTPCourse.m in Sources */,
 				D48CE35616A5AE130021FB10 /* PTPCourseDetailViewController.m in Sources */,
 				D493F9A416A5F2AC00DE5BA1 /* PTPCourseCell.m in Sources */,
+				E042636316AA8ED600B993C9 /* JSONKit.m in Sources */,
+				E042636616AA8EE200B993C9 /* iCarousel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

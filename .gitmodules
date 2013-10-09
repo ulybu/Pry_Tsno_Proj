@@ -1,0 +1,6 @@
+[submodule "vendor/iCarousel"]
+	path = vendor/iCarousel
+	url = https://github.com/nicklockwood/iCarousel.git
+[submodule "vendor/JSONKit"]
+	path = vendor/JSONKit
+	url = https://github.com/johnezang/JSONKit.git
